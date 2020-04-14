@@ -210,7 +210,7 @@ function wps_add_tracking_body($classes) {
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->';
   // close <body> tag, insert stuff, open some other tag with senseless variable      
-  $classes[] = '"><script>'.$gtmbody.'</script>';
+  $classes[] = '">'.$gtmbody.'</noscript novar="';
 
   return $classes;
 }
